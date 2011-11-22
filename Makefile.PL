@@ -8,7 +8,6 @@ WriteMakefile(
     NAME         => 'MooseX::Types::DateTime',
     VERSION_FROM => 'lib/MooseX/Types/DateTime.pm',
     INSTALLDIRS  => 'site',
-    SIGN         => 1,
     PL_FILES     => { },
     PREREQ_PM => {
         'Moose'              => '2.0100', # inline_as
