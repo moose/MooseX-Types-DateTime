@@ -20,5 +20,11 @@ WriteMakefile(
         'namespace::clean'   => '0.08',
         'MooseX::Types'      => '0.19',
     },
+    META_MERGE => {
+        resources => {
+            repository  => 'git://git.moose.perl.org/MooseX-Types-DateTime.git',
+        },
+    },
+
 );
 
