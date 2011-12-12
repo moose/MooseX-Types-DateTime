@@ -17,7 +17,7 @@ WriteMakefile(
         'Test::use::ok'      => '0.02',
         'Test::Exception'    => '0.27',
         'namespace::clean'   => '0.08',
-        'MooseX::Types'      => '0.19',
+        'MooseX::Types'      => '0.30',
     },
     META_MERGE => {
         resources => {
