@@ -10,7 +10,7 @@ WriteMakefile(
     INSTALLDIRS  => 'site',
     PL_FILES     => { },
     PREREQ_PM => {
-        'Moose'              => '2.0100', # inline_as
+        'Moose'              => '0.41', # class_type
         'DateTime'           => '0.4302',
         'DateTime::Locale'   => '0.4001',
         'DateTime::TimeZone' => '0.95',
