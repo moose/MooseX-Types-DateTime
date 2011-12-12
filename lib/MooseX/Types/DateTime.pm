@@ -7,15 +7,17 @@ use warnings;
 
 our $VERSION = "0.06";
 
-use DateTime ();
-use DateTime::Locale ();
-use DateTime::TimeZone ();
+use Moose 0.41 ();
+use DateTime 0.4302 ();
+use DateTime::Duration 0.4302 ();
+use DateTime::Locale 0.4001 ();
+use DateTime::TimeZone 0.95 ();
 
-use MooseX::Types::Moose qw/Num HashRef Str/;
+use MooseX::Types::Moose 0.30 qw/Num HashRef Str/;
 
-use namespace::clean;
+use namespace::clean 0.08;
 
-use MooseX::Types -declare => [qw( DateTime Duration TimeZone Locale Now )];
+use MooseX::Types 0.30 -declare => [qw( DateTime Duration TimeZone Locale Now )];
 
 class_type "DateTime";
 class_type "DateTime::Duration";
