@@ -207,7 +207,7 @@ L<DateTime>, L<DateTimeX::Easy>
 =head1 VERSION CONTROL
 
 This module is maintained using git. You can get the latest version from
-L<git://github.com/nothingmuch/moosex-types-datetime.git>.
+L<git://git.moose.perl.org/MooseX-Types-DateTime.git>.
 
 =head1 AUTHOR
 
