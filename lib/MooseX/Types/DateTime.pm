@@ -200,7 +200,7 @@ Delegates to L<DateTime::TimeZone/new> with the string as the C<name> argument.
 
 =head1 SEE ALSO
 
-L<MooseX::Types::DateTimeX>
+L<MooseX::Types::DateTime::MoreCoercions>
 
 L<DateTime>, L<DateTimeX::Easy>
 
