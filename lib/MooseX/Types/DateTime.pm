@@ -12,7 +12,7 @@ use DateTime::TimeZone 0.95 ();
 
 use MooseX::Types::Moose 0.30 qw/Num HashRef Str/;
 
-use namespace::autoclean;
+use namespace::clean 0.08;
 
 use MooseX::Types 0.30 -declare => [qw( DateTime Duration TimeZone Locale Now )];
 

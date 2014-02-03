@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+        - temporarily revert change that cleaned namespaces (0.09), until the
+          logic is cleaned up in MooseX::Types itself
 
 0.09      2014-02-03 02:16:30Z
         - Require perl 5.8.3, as Moose does
