@@ -138,7 +138,7 @@ isa_ok( find_type_constraint($_), "Moose::Meta::TypeConstraint" ) for qw(DateTim
         use MooseX::Types::DateTime qw(DateTime Duration);
 
         has 'date' => (is=>'rw', isa=>DateTime, coerce=>1);
-        has 'duration' => (is=>'rw', isa=>Duration, coerce=>1);	
+        has 'duration' => (is=>'rw', isa=>Duration, coerce=>1);
 
     }
 

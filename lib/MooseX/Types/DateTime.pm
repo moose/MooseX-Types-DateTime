@@ -45,16 +45,16 @@ subtype( Now,
 
 our %coercions = (
     DateTime => [
-		from Num, via { 'DateTime'->from_epoch( epoch => $_ ) },
-		from HashRef, via { 'DateTime'->new( %$_ ) },
-		from Now, via { 'DateTime'->now },
+        from Num, via { 'DateTime'->from_epoch( epoch => $_ ) },
+        from HashRef, via { 'DateTime'->new( %$_ ) },
+        from Now, via { 'DateTime'->now },
     ],
     "DateTime::Duration" => [
-		from Num, via { DateTime::Duration->new( seconds => $_ ) },
-		from HashRef, via { DateTime::Duration->new( %$_ ) },
+        from Num, via { DateTime::Duration->new( seconds => $_ ) },
+        from HashRef, via { DateTime::Duration->new( %$_ ) },
     ],
     "DateTime::TimeZone" => [
-		from Str, via { DateTime::TimeZone->new( name => $_ ) },
+        from Str, via { DateTime::TimeZone->new( name => $_ ) },
     ],
     "DateTime::Locale" => [
         from Moose::Util::TypeConstraints::find_or_create_isa_type_constraint("Locale::Maketext"),
@@ -72,11 +72,11 @@ for my $type ( "DateTime::Duration", Duration ) {
 }
 
 for my $type ( "DateTime::TimeZone", TimeZone ) {
-	coerce $type => @{ $coercions{"DateTime::TimeZone"} };
+    coerce $type => @{ $coercions{"DateTime::TimeZone"} };
 }
 
 for my $type ( "DateTime::Locale", Locale ) {
-	coerce $type => @{ $coercions{"DateTime::Locale"} };
+    coerce $type => @{ $coercions{"DateTime::Locale"} };
 }
 
 __PACKAGE__
@@ -94,7 +94,7 @@ Moose
 
 Export Example:
 
-	use MooseX::Types::DateTime qw(TimeZone);
+    use MooseX::Types::DateTime qw(TimeZone);
 
     has time_zone => (
         isa => TimeZone,
@@ -106,7 +106,7 @@ Export Example:
 
 Namespaced Example:
 
-	use MooseX::Types::DateTime;
+    use MooseX::Types::DateTime;
 
     has time_zone => (
         isa => 'DateTime::TimeZone',
@@ -216,8 +216,8 @@ John Napiorkowski E<lt>jjn1056 at yahoo.comE<gt>
 
 =head1 COPYRIGHT
 
-	Copyright (c) 2008 Yuval Kogman. All rights reserved
-	This program is free software; you can redistribute
-	it and/or modify it under the same terms as Perl itself.
+    Copyright (c) 2008 Yuval Kogman. All rights reserved
+    This program is free software; you can redistribute
+    it and/or modify it under the same terms as Perl itself.
 
 =cut
