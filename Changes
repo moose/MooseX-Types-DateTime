@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.09      2014-02-03 02:16:30Z
         - Require perl 5.8.3, as Moose does
         - canonical repository moved to github moose organization
 
