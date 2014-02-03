@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 
-use Test::More 'no_plan';
+use Test::More;
 use Test::Exception;
 
 use ok 'MooseX::Types::DateTime';
@@ -146,3 +146,5 @@ isa_ok( find_type_constraint($_), "Moose::Meta::TypeConstraint" ) for qw(DateTim
     => 'Instantiated object using export types';
 
 }
+
+done_testing;
