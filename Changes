@@ -2,6 +2,7 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
         - Require perl 5.8.3, as Moose does
+        - canonical repository moved to github moose organization
 
 0.07    2011-12-12 12:58:19Z
         - Provide optimize_as for pre-2.0100 Moose versions

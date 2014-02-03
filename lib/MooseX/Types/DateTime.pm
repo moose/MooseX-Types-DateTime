@@ -203,11 +203,6 @@ L<MooseX::Types::DateTime::MoreCoercions>
 
 L<DateTime>, L<DateTimeX::Easy>
 
-=head1 VERSION CONTROL
-
-This module is maintained using git. You can get the latest version from
-L<git://git.moose.perl.org/MooseX-Types-DateTime.git>.
-
 =head1 AUTHOR
 
 Yuval Kogman E<lt>nothingmuch@woobling.orgE<gt>
