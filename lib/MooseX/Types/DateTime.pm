@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package MooseX::Types::DateTime;
 
 use strict;
