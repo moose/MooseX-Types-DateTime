@@ -1,4 +1,6 @@
+/.ackrc
 /.build/
-!.gitignore
+!/.gitignore
+/.latest
 /MooseX-Types-DateTime-*/
 /MooseX-Types-DateTime-*.tar.gz
