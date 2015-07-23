@@ -14,7 +14,7 @@ use DateTime::TimeZone 0.95 ();
 
 use MooseX::Types::Moose 0.30 qw/Num HashRef Str/;
 
-use namespace::clean 0.08;
+use namespace::clean 0.19;
 
 use MooseX::Types 0.30 -declare => [qw( DateTime Duration TimeZone Locale Now )];
 use if MooseX::Types->VERSION >= 0.42, 'namespace::autoclean';
