@@ -1,4 +1,5 @@
 package MooseX::Types::DateTime;
+# ABSTRACT: L<DateTime> related constraints and coercions for Moose
 
 use strict;
 use warnings;
@@ -85,11 +86,6 @@ __PACKAGE__
 __END__
 
 =pod
-
-=head1 NAME
-
-MooseX::Types::DateTime - L<DateTime> related constraints and coercions for
-Moose
 
 =head1 SYNOPSIS
 
@@ -205,17 +201,5 @@ Delegates to L<DateTime::TimeZone/new> with the string as the C<name> argument.
 L<MooseX::Types::DateTime::MoreCoercions>
 
 L<DateTime>, L<DateTimeX::Easy>
-
-=head1 AUTHOR
-
-Yuval Kogman E<lt>nothingmuch@woobling.orgE<gt>
-
-John Napiorkowski E<lt>jjn1056 at yahoo.comE<gt>
-
-=head1 COPYRIGHT
-
-    Copyright (c) 2008 Yuval Kogman. All rights reserved
-    This program is free software; you can redistribute
-    it and/or modify it under the same terms as Perl itself.
 
 =cut
