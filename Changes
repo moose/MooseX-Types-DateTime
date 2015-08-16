@@ -1,6 +1,7 @@
 Revision history for MooseX-Types-DateTime
 
 {{$NEXT}}
+        - update some distribution tooling
 
 0.10      2014-02-03 17:17:57Z
         - temporarily revert change that cleaned namespaces (0.09), until the
