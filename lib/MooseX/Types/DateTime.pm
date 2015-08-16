@@ -4,7 +4,7 @@ package MooseX::Types::DateTime;
 use strict;
 use warnings;
 
-our $VERSION = '0.11';
+our $VERSION = '0.12';
 
 use 5.008003;
 use Moose 0.41 ();

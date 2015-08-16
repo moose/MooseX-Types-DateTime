@@ -1,5 +1,7 @@
 Revision history for MooseX-Types-DateTime
 
+{{$NEXT}}
+
 0.11      2015-08-16 01:05:36Z
         - update some distribution tooling
 
