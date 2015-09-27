@@ -1,6 +1,7 @@
 Revision history for MooseX-Types-DateTime
 
 {{$NEXT}}
+        - fix new test that may fail with older Moose
 
 0.11      2015-08-16 01:05:36Z
         - update some distribution tooling
