@@ -8,7 +8,7 @@ MooseX::Types::DateTime - L<DateTime> related constraints and coercions for Moos
 
 =head1 VERSION
 
-version 0.12
+version 0.13
 
 =head1 SYNOPSIS
 
@@ -142,7 +142,7 @@ irc://irc.perl.org/#moose.
 
 =head1 CONTRIBUTORS
 
-=for stopwords Karen Etheridge Dagfinn Ilmari Mannsåker Florian Ragwitz John Napiorkowski Shawn M Moore
+=for stopwords Karen Etheridge Dagfinn Ilmari Mannsåker Florian Ragwitz John Napiorkowski Shawn M Moore Dave Rolsky
 
 =over 4
 
@@ -165,6 +165,10 @@ John Napiorkowski <jjnapiork@cpan.org>
 =item *
 
 Shawn M Moore <sartak@gmail.com>
+
+=item *
+
+Dave Rolsky <autarch@urth.org>
 
 =back
 
