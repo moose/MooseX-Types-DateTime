@@ -13,7 +13,7 @@ use DateTime::Duration 0.4302 ();
 use DateTime::Locale 0.4001 ();
 use DateTime::TimeZone 0.95 ();
 
-use MooseX::Types::Moose 0.30 qw/Num HashRef Str/;
+use MooseX::Types::Moose 0.30 qw/Num HashRef Object Str/;
 
 use namespace::clean 0.19;
 
@@ -23,12 +23,14 @@ use if MooseX::Types->VERSION >= 0.42, 'namespace::autoclean';
 class_type "DateTime";
 class_type "DateTime::Duration";
 class_type "DateTime::TimeZone";
-class_type "DateTime::Locale::root" => { name => "DateTime::Locale" };
 
 subtype DateTime, as 'DateTime';
 subtype Duration, as 'DateTime::Duration';
 subtype TimeZone, as 'DateTime::TimeZone';
-subtype Locale,   as 'DateTime::Locale';
+
+subtype 'DateTime::Locale', as Object,
+    where { $_->isa('DateTime::Locale::root') || $_->isa('DateTime::Locale::FromData') };
+subtype Locale, as 'DateTime::Locale';
 
 subtype( Now,
     as Str,
