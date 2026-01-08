@@ -106,7 +106,7 @@ isa_ok( find_type_constraint($_), "Moose::Meta::TypeConstraint" ) for qw(DateTim
     like(exception { Gorch->new( loc => "not_a_place_or_a_locale" ) }, qr/Invalid locale/, "bad locale name");
 
     SKIP: {
-        skip "No Locale::Maketext", 2 unless eval { require Locale::Maketext };
+        skip "No Locale::Maketext", 2 unless eval { +require Locale::Maketext; 1 };
 
         {
             package Some::L10N;
